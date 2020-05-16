@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_centerHorizontal="true"
+        android:text="M y  C a r t"
+        android:textColor="@color/colorAccent01"
+        android:textSize="30sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/recycler">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/carttext"
+            android:text="Rs: 00"
+            android:fontFamily="serif"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place"
+            android:fontFamily="serif"
+            android:textColor="@color/colorA"
+            android:background="@color/colorPrimaryDark"
+            android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>
+</RelativeLayout>

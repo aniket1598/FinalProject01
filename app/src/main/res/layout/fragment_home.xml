@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:weightSum="10">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+          <TextView
+              android:id="@+id/text01"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:fontFamily="sans-serif"
+              android:text="C a t e g o r i e s"
+              android:textColor="@color/colorAccent1"
+              android:textSize="30dp"/>
+      </RelativeLayout>
+
+
+      <GridLayout
+          android:id="@+id/homegrid"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="6"
+          android:padding="14dp"
+          android:columnCount="2"
+          android:rowCount="1"
+          android:alignmentMode="alignMargins">
+
+
+          <androidx.cardview.widget.CardView
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_rowWeight="1"
+              android:layout_columnWeight="1"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:layout_marginBottom="90dp"
+              app:cardCornerRadius="9dp"
+              app:cardElevation="4dp">
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_marginLeft="0dp"
+                  android:orientation="vertical">
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="200dp"
+                      android:layout_gravity="center_horizontal"
+                      android:scaleType="fitCenter"
+                      android:src="@drawable/c5" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:text="CAKES"
+                      android:fontFamily="sans-serif"
+                      android:textAlignment="center"
+                      android:textColor="@color/colorPrimaryDark"
+                      android:textSize="18sp" />
+
+              </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+          <androidx.cardview.widget.CardView
+              android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              android:layout_marginBottom="90dp"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              app:cardElevation="4dp"
+              app:cardCornerRadius="8dp">
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="0dp"
+                  android:orientation="vertical"
+                  android:layout_gravity="center_horizontal">
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="200dp"
+                      android:scaleType="fitCenter"
+                      android:layout_gravity="center_horizontal"
+                      android:src="@drawable/c3" />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="CHOCOLATES"
+                      android:fontFamily="sans-serif"
+                      android:layout_gravity="center"
+                      android:textAlignment="center"
+                      android:textColor="@color/colorPrimaryDark"
+                      android:textSize="18sp" />
+              </LinearLayout>
+          </androidx.cardview.widget.CardView>
+      </GridLayout>
+  </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
